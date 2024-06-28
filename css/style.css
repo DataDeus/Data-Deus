@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero {
+    color: white;
+    height: 100vh;
+    font-size: 1.3rem;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../assets/hero.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero p {
+    font-size: 1.3rem;
+}
+
+h3 {
+    text-align: center;
+    margin: 5%;
+    font-size: 1.65rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5%;
+}
+
+img {
+    width: 75%;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin: 5%;
+    text-align: center;
+}
+
+p {
+    font-size: .85rem;
+    text-align: center;
+    margin: 5% 10%;
+}
+
+.benefits h2 {
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("../assets/benefits.jpg");
+    padding: 20px;
+    margin: 0;
+    color: white;
+    background-size: cover;
+    text-align: left;
+}
+
+.process h2 {
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("../assets/reason.png");
+    padding: 20px;
+    margin: 0;
+    color: white;
+    background-size: cover;
+    text-align: left;
+}
+
+li {
+    margin: 5% 10% 5% 0%;
+    font-size: .85rem;
+}
+
+em {
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: rgb(236, 230, 230);
+    border-radius: 15px;
+    padding: 15px;           /* Padding inside the card */
+    width: 250px;            /* Fixed width for the card */
+    text-align: center; 
+    margin: 5% 0%;
+}
+
+.card p {
+    margin: 1% 0%;
+}
+
+.footer {
+    margin: 5% 0% 3%;
+    text-align: center;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Tablets */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+    .hero {
+        font-size: 2.65rem;
+    }
+
+    .hero p {
+        font-size: 2.3rem;
+    }
+
+    .about {
+        display: flex;
+        font-size: 1.39rem;
+        margin: 0% 10%;
+    }
+
+    .about-text p {
+        margin: 0%;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2.15rem;
+    }
+
+    p, li {
+        font-size: 1.5rem;
+    }
+
+    .benefits h2 {
+        padding: 40px;
+        background-position: center;
+    }
+    
+    .process h2 {
+        padding: 40px;
+        background-position: center;
+    }
+
+    li {
+        margin: 5%; 
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 45px;           /* Padding inside the card */
+        width: 750px;            /* Fixed width for the card */
+        text-align: center; 
+        margin: 3% 0%;
+    }
+
+    .card p {
+        margin: 1% 0%;
+    }
+
+}
+
+/* Laptops */
+
+@media (min-width: 1280px) {
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        margin: 0% 10%;
+        justify-content: center;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        margin: 0% 0% 0% 10% ;
+    }
+    
+    h3 {
+        margin: 3%;
+        font-size: 2.5rem;
+    }
+    
+    img {
+        width: 75%;
+    }
+    
+    h2 {
+        font-size: 2.15rem;
+        text-align: center;
+    }
+
+    p, li {
+        font-size: 1.5rem;
+    }
+
+    .benefits h2 {
+        padding: 60px;
+        background-position: center;
+    }
+    
+    .process h2 {
+        padding: 60px;
+        background-position: center;
+    }
+
+    li {
+        margin: 3%;
+    }
+
+    .programs p {
+        margin: 2% 5% 5%;
+    }
+
+    .programs h3 {
+        margin: 0%;
+    }
+    
+    .cards {
+        flex-direction: row;
+    }
+
+    .card {
+        padding: 10px;        
+        width: 700px; 
+        margin: 0% 5%;
+    }
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap');
+
+:root {
+    --light-color: white;
+    --dark-color: black;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Mulish';
+    width: 100%; 
+    max-width: 100%; 
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 1.5rem;
+    text-align: center;
+    align-content: center;
+    /* background-image: url(../assets/large\ hero.jpg); */
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../assets/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.hero p {
+    text-align: center;
+    margin: 0%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about img {
+    align-items: center;
+    width: 85%;
+}
+
+h3 {
+    background-image: radial-gradient(circle, black, grey, white);
+    /* background-image: linear-gradient(to bottom, black 20%, #e0e0e0 100%); */
+    color: var(--light-color);
+    padding: 10px;
+    margin: 5%;
+    text-align: center;
+}
+
+h2, p{
+    margin: 5% 10%;
+}
+
+p {
+    text-align: justify;
+}
+
+.benefits h2 {
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("../assets/benefits.jpg");
+    padding: 20px;
+    margin: 0;
+    color: white;
+    background-size: cover;
+    text-align: left;
+}
+
+.process h2 {
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("../assets/reason.png");
+    padding: 20px;
+    margin: 0;
+    color: white;
+    background-size: cover;
+    text-align: left;
+}
+
+li {
+    margin: 5% 10% 5% 0%;
+}
+
+/* Tablets */
+
+@media screen and (min-width: 768px) and (max-width) {
+
+    body {
+        font-size: 2rem;
+    }
+
+    .hero {
+        font-size: 2.5rem;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about p {
+        font-size: 2rem;
+        font-weight: 1000;
+    }
+
+    .benefits h2 {
+        padding: 65px;
+    }
+    
+    .process h2 {
+        padding: 60px;
+    }
+}
+
+/* Desktop 1024 or 1279*/
+
+@media screen and (min-width: 1024px) {
+
+    .hero {
+        font-size: 3rem;
+    }
+
+    h3 {
+        margin: 3% 35%;
+    }
+
+    .about {
+        height: 60vh;
+        justify-content: space-around;
+    }
+
+    .about-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0% 15%;
+    }
+
+    .about img {
+        width: 100%;
+        align-self: center;
+        object-fit: contain;
+    }
+ 
+    .about p {
+        font-size: 2rem;
+        font-weight: 1000;
+    }
+
+    .about-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0% 10%;
+    }
+}
